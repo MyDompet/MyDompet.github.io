@@ -2,7 +2,7 @@
 const CACHE_NAME = 'keuangan-pwa-v2.0';
 const APP_SHELL = [
   '',
-  'index.html',
+  'index',
   'manifest.json',
   'icon-192x192.png'
 ];

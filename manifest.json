@@ -1,7 +1,7 @@
 {
   "name": "Keuangan Pribadi Rifai",
   "short_name": "Keuangan Pribadi Rifai",
-  "start_url": "index.html",
+  "start_url": "index",
   "scope": "/",
   "display": "standalone",
   "theme_color": "#2563eb",
@@ -40,7 +40,7 @@
       "name": "Transaksi Baru",
       "short_name": "Transaksi",
       "description": "Tambah transaksi baru",
-      "url": "keuangan.html?tab=transaction",
+      "url": "index.html?tab=transaction",
       "icons": [{ "src": "icon-192x192.png", "sizes": "192x192" }]
     }
   ]

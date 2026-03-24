@@ -19,7 +19,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#0a0e1a">
     <meta name="msapplication-TileColor" content="#0a0e1a">
-    <meta name="msapplication-starturl" content="keuangan.html">
+    <meta name="msapplication-starturl" content="index.html">
     <link rel="manifest" href="manifest.json">
     
     <!-- Apple Touch Icons -->
@@ -296,7 +296,7 @@
         .stat-dana::before { background: linear-gradient(135deg, #047857, #0891b2); }
         .stat-mandiri::before { background: linear-gradient(135deg, #b91c1c, #dc2626); }
         .stat-qris::before { background: linear-gradient(135deg, #7c3aed, #a855f7); }
-        .stat-ibu::before { background: linear-gradient(135deg, #ec4899, #f43f5e); } /* Warna untuk Saldo Ibu */
+        .stat-ibu::before { background: linear-gradient(135deg, #ec4899, #f43f5e); } /* Warna untuk Saldo Tabungan */
 
         .stat-head {
             display: flex;
@@ -347,7 +347,7 @@
         .stat-dana .stat-icon { color: #0891b2; }
         .stat-mandiri .stat-icon { color: #dc2626; }
         .stat-qris .stat-icon { color: #a855f7; }
-        .stat-ibu .stat-icon { color: #ec4899; } /* Ikon Saldo Ibu */
+        .stat-ibu .stat-icon { color: #ec4899; } /* Ikon Saldo Tabungan */
 
         .stat-foot {
             display: flex;
@@ -1287,7 +1287,7 @@
                     </div>
                 </div>
 
-                <!-- 5 kartu dompet (Cash, Dana, Mandiri, Qris, Ibu) -->
+                <!-- 5 kartu dompet (Cash, Dana, Mandiri, Qris, Tabungan) -->
                 <div class="row g-3 mb-4 fade-in" style="animation-delay: 0.1s">
                     <div class="col-12 col-sm-6 col-lg-2">
                         <div class="stat-card stat-cash">
@@ -1353,9 +1353,9 @@
                         <div class="stat-card stat-ibu">
                             <div class="stat-head">
                                 <div>
-                                    <p class="stat-label">Saldo Ibu</p>
+                                    <p class="stat-label">Saldo Tabungan</p>
                                     <div class="stat-value" id="ibuAmount">Rp 0</div>
-                                    <p class="stat-meta">Dompet Ibu</p>
+                                    <p class="stat-meta">Saldo Tabungan</p>
                                 </div>
                                 <div class="stat-icon">
                                     <i class="bi bi-heart"></i>
@@ -1662,7 +1662,7 @@
                                             <option value="Dana">Dana</option>
                                             <option value="Mandiri">Mandiri</option>
                                             <option value="Qris">Qris</option>
-                                            <option value="Ibu">Ibu</option>
+                                            <option value="Tabungan">Tabungan</option>
                                         </select>
                                     </div>
                                 </div>
@@ -1690,7 +1690,7 @@
                                             <option value="Dana">Dana</option>
                                             <option value="Mandiri">Mandiri</option>
                                             <option value="Qris">Qris</option>
-                                            <option value="Ibu">Ibu</option>
+                                            <option value="Tabungan">Tabungan</option>
                                         </select>
                                     </div>
                                 </div>
@@ -1793,7 +1793,7 @@
                                                     <option value="Dana">Dana</option>
                                                     <option value="Mandiri">Mandiri</option>
                                                     <option value="Qris">Qris</option>
-                                                    <option value="Ibu">Ibu</option>
+                                                    <option value="Tabungan">Tabungan</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -2043,7 +2043,7 @@
                                                 <option value="Dana">Dana</option>
                                                 <option value="Mandiri">Mandiri</option>
                                                 <option value="Qris">Qris</option>
-                                                <option value="Ibu">Ibu</option>
+                                                <option value="Tabungan">Tabungan</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
@@ -2130,7 +2130,7 @@
                                                 <option value="Dana">Dana</option>
                                                 <option value="Mandiri">Mandiri</option>
                                                 <option value="Qris">Qris</option>
-                                                <option value="Ibu">Ibu</option>
+                                                <option value="Tabungan">Tabungan</option>
                                             </select>
                                         </div>
                                     </div>
@@ -2215,9 +2215,9 @@
                                     <div class="wallet-icon"><i class="bi bi-credit-card"></i></div>
                                     <div>Qris</div>
                                 </div>
-                                <div class="col wallet-selector" data-wallet="Ibu">
+                                <div class="col wallet-selector" data-wallet="Tabungan">
                                     <div class="wallet-icon"><i class="bi bi-heart"></i></div>
-                                    <div>Ibu</div>
+                                    <div>Tabungan</div>
                                 </div>
                             </div>
                             <input type="hidden" id="incomeWallet" required>
@@ -2257,9 +2257,9 @@
                                     <div class="wallet-icon"><i class="bi bi-credit-card"></i></div>
                                     <div>Qris</div>
                                 </div>
-                                <div class="col wallet-selector" data-wallet="Ibu">
+                                <div class="col wallet-selector" data-wallet="Tabungan">
                                     <div class="wallet-icon"><i class="bi bi-heart"></i></div>
-                                    <div>Ibu</div>
+                                    <div>Tabungan</div>
                                 </div>
                             </div>
                             <input type="hidden" id="expenseWallet" required>
@@ -2430,7 +2430,7 @@
                                 <option value="Dana">Dana</option>
                                 <option value="Mandiri">Mandiri</option>
                                 <option value="Qris">Qris</option>
-                                <option value="Ibu">Ibu</option>
+                                <option value="Tabungan">Tabungan</option>
                             </select>
                         </div>
                     </div>
@@ -2510,7 +2510,7 @@
 
         let lastDashboard = {
             total: 0,
-            wallets: { Cash: 0, Dana: 0, Mandiri: 0, Qris: 0, Ibu: 0 } // Tambahkan Ibu
+            wallets: { Cash: 0, Dana: 0, Mandiri: 0, Qris: 0, Tabungan: 0 } // Tambahkan Tabungan
         };
 
         // ============================================
@@ -2993,7 +2993,7 @@
             const dana = toInt(lastDashboard.wallets.Dana);
             const mandiri = toInt(lastDashboard.wallets.Mandiri);
             const qris = toInt(lastDashboard.wallets.Qris);
-            const ibu = toInt(lastDashboard.wallets.Ibu);
+            const ibu = toInt(lastDashboard.wallets.Tabungan);
             const total = toInt(lastDashboard.total);
 
             if (balanceCardsRow) {
@@ -3024,7 +3024,7 @@
                     </div>
                     <div class="col-6 col-md-2">
                         <div class="mini-card mini-card-primary">
-                            <div class="mini-card-title">Ibu</div>
+                            <div class="mini-card-title">Tabungan</div>
                             <div class="mini-card-value">${formatRupiah(ibu)}</div>
                         </div>
                     </div>
@@ -3592,7 +3592,7 @@
             const dana = toInt(dashboardData.dana ?? wallets.Dana ?? 0);
             const mandiri = toInt(dashboardData.mandiri ?? wallets.Mandiri ?? 0);
             const qris = toInt(dashboardData.bri ?? wallets.Qris ?? 0);
-            const ibu = toInt(dashboardData.ibu ?? wallets.Ibu ?? 0);
+            const ibu = toInt(dashboardData.ibu ?? wallets.Tabungan ?? 0);
 
             const total = cash + dana + mandiri + qris + ibu;
 
@@ -3608,7 +3608,7 @@
 
             lastDashboard = {
                 total: total,
-                wallets: { Cash: cash, Dana: dana, Mandiri: mandiri, Qris: qris, Ibu: ibu }
+                wallets: { Cash: cash, Dana: dana, Mandiri: mandiri, Qris: qris, Tabungan: ibu }
             };
         }
 
@@ -5501,7 +5501,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', function () {
-            console.log('Keuangan Pro - Tema Gelap Loaded with Saldo Ibu');
+            console.log('Keuangan Pro - Tema Gelap Loaded with Saldo Tabungan');
 
             const today = new Date().toISOString().split('T')[0];
             const debtUploadArea = document.getElementById('debtUploadArea');
